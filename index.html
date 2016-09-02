@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    
     <link rel="stylesheet" type="text/css" href="css/common.css"/>
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
@@ -15,11 +16,14 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/owl.carousel.min.js" type="text/javascript" charset="utf-8"></script>
 	  <script src="js/jquery.nav.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/jquery-animate-css-roate-scale.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script src="js/jquery-animate-css-roate-scale.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/jquery-transform.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/jquery-unleash.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
-   
+    <script src="js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>-->
+    <script src="js/jquery.slide.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/slider-index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/carouFredSel.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/autoimg.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body style="overflow-x:hidden">
@@ -37,11 +41,11 @@
 	     	 	   <ul  class="">
 		            <li class="menu-item current"><a href="#home-slider">首页</a></li>
 		            <li class="menu-item"><a href="#product-box">产品介绍</a></li>
-		            <li class="menu-item"><a href="#about">微商城</a></li>
-		            <li class="menu-item"><a href="#team-members">自媒体</a></li>
-		            <li class="menu-item"><a href="#portfolio-2">服务特色</a></li>
-		            <li class="menu-item"><a href="#client">商业合作</a></li>
-		            <li class="menu-item"><a href="#blog">联系我们</a></li>
+		            <li class="menu-item"><a href="#shop-box">微商城</a></li>
+		            <li class="menu-item"><a href="#video-box">自媒体</a></li>
+		            <li class="menu-item"><a href="#service-box">服务特色</a></li>
+		            <li class="menu-item"><a href="#business-box">商业合作</a></li>
+		            <li class="menu-item" style="padding-right: 20px;"><a href="#about-box">联系我们</a></li>
 		          </ul> 
  	     </div>
      	</div>
@@ -52,13 +56,13 @@
      	 	  </div>
      	 	  <div id="header-title">
 		     	 	   <ul  class="">
-			            <li class="menu-item current"><a href="#home-slider">首页</a></li>
-			            <li class="menu-item"><a href="#product-box">产品介绍</a></li>
-			            <li class="menu-item"><a href="#about">微商城</a></li>
-			            <li class="menu-item"><a href="#team-members">自媒体</a></li>
-			            <li class="menu-item"><a href="#portfolio-2">服务特色</a></li>
-			            <li class="menu-item"><a href="#client">商业合作</a></li>
-			            <li class="menu-item"><a href="#blog">联系我们</a></li>
+			             <li class="menu-item current"><a href="#home-slider">首页</a></li>
+				           <li class="menu-item"><a href="#product-box">产品介绍</a></li>
+				           <li class="menu-item"><a href="#shop-box">微商城</a></li>
+				           <li class="menu-item"><a href="#video-box">自媒体</a></li>
+				           <li class="menu-item"><a href="#service-box">服务特色</a></li>
+				           <li class="menu-item"><a href="#business-box">商业合作</a></li>
+				           <li class="menu-item"><a href="#about-box">联系我们</a></li>
 			          </ul> 
      	    </div>
      	 </div>
@@ -81,12 +85,12 @@
 	        	<div class="item">
 	                <img src="img/slider/slide_content_01.png"/>
 	            </div>
-	            <div class="item">
+	            <!--<div class="item">
 	                 <img src="img/slider/slide_content_01.png"/>
 	            </div>
 	            <div class="item">
 	               <img src="img/slider/slide_content_01.png"/>
-	           </div>
+	           </div>-->
 	        </div>  
 	    </div>
      </div>
@@ -96,51 +100,381 @@
      	时间：2016-09-01
      	描述：产品展示
      -->
-     <div id="product-box">
-     	    <div id="outer">
-				    <div class="box"> <img src="img/product/p1.jpg" />
-				      <div class="caption_1"> <a href="#">
-				        <h1>Caption title</h1>
-				       </a>
-				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				     </div>
-				    </div>
-				    <div class="box"> <img src="img/product/p2.jpg"  />
-				      <div class="caption_1"> <a href="#">
-				        <h1>Caption title</h1>
-				       </a>
-				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in lorem vitae nibh ultrices adipiscing. In fringilla auctor mauris ac mollis.</p>
-				     </div>
-				   </div>
-				    <div class="box"> <img src="img/product/p3.jpg"  />
-				      <div class="caption_1"> <a href="#">
-				        <h1>Caption title</h1>
-				       </a>
-				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in lorem vitae nibh ultrices adipiscing. In fringilla auctor mauris ac mollis.</p>
-				     </div>
-				    </div>
-				    <div class="box"> <img src="img/product/p4.jpg" />
-				      <div class="caption_1"> <a href="#">
-				        <h1>Caption title</h1>
-				       </a>
-				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in lorem vitae nibh ultrices adipiscing. In fringilla auctor mauris ac mollis, Sed pharetra consectetur risus eu blandit. Fusce volutpat adipiscing eleifend. Aliquam gravida mollis odio, a consequat urna dictum quis.</p>
-				     </div>
-				   </div>			
-				    <div class="box"> <img src="img/product/p5.jpg" />			
-				      <div class="caption_1"> <a href="#">			
-				        <h1>Caption title</h1>		
-				       </a>		
-				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in lorem vitae nibh ultrices adipiscing. In fringilla auctor mauris ac mollis.</p>		
-				     </div>
-				   </div>
-				    <div class="box featured"> <img src="img/product/p6.jpg" />
-				      <div class="caption_1"> <a href="#">
-				        <h1>Caption title</h1>
-				       </a>
-				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in lorem vitae nibh ultrices adipiscing. In fringilla auctor mauris ac mollis.</p>
-				     </div>
-				   </div>
-        </div>
+     <div id="product-box" class="product-box">
+     	   <div class="subtitle-box">
+     	   	    <img src="img/subtitle/production.png"/>
+     	   	    <p class="subtitle">产品介绍</p>
+     	   </div> 
+     	   <div class="subtile-img">
+     	   	 <!--<div class="subshow">
+     	   	 	  <div id="carousel" class="carousel">
+									<div><img src="img/product/shenghao.jpg" /></div>
+									<div><img src="img/product/huotui.jpg"/></div>
+									<div><img src="img/product/yupian.jpg" /></div>
+									<div><img src="img/product/xia.jpg" /></div>
+									<div><img src="img/product/beer.jpg"/></div>
+							</div>
+     	   	 </div>-->
+     	   </div>
+     	   <div id="discount" class="discount">
+     	   	  <div class="servicesBox">
+							<div class="serBox">
+								<div class="serBoxOn img-responsive">
+									<p class="main-title">立即购买</p>
+									<p class="sub-title">扫描二维码<br>进入商城</p>
+									<div class="sub-img-box">
+											<div class="sub-img">
+										    <img src="img/product/qrcode_buy.jpg" class="img-responsive"/>
+									   </div>
+									</div>		
+								</div>
+								<div class="pic1"> <img src="img/product/discount_1.jpg" class="img-responsive"> </div>
+							
+							</div>
+						
+							<div class="serBox ">
+								<div class="serBoxOn img-responsive">
+									<p class="main-title">报名参加试吃团</p>
+									<p class="sub-title">扫描二维码<br>了解详情</p>
+									<div class="sub-img-box">
+											<div class="sub-img">
+										    <img src="img/product/qrcode_shichi.jpg" class="img-responsive"/>
+									   </div>
+									</div>		
+								</div>
+								<div class="pic1  "> 
+									<img src="img/product/discount_2.jpg" class="img-responsive">
+								</div>
+								
+							</div>
+						
+							<div class="serBox">
+								<div class="serBoxOn img-responsive">
+									<p class="main-title">立即购买</p>
+									<p class="sub-title">扫描二维码<br>进入商城</p>
+									<div class="sub-img-box">
+											<div class="sub-img">
+										    <img src="img/product/qrcode_buy.jpg" class="img-responsive"/>
+									   </div>
+									</div>		
+								</div>
+								<div class="pic1"> 
+									<img src="img/product/discount_3.jpg" class="img-responsive"> 
+								</div>	
+							</div>
+							
+							<div class="serBox">
+								<div class="serBoxOn img-responsive">
+									<p class="main-title">立即购买</p>
+									<p class="sub-title">扫描二维码<br>进入商城</p>
+									<div class="sub-img-box">
+											<div class="sub-img">
+										    <img src="img/product/qrcode_buy.jpg" class="img-responsive"/>
+									   </div>
+									</div>		
+								</div>
+								<div class="pic1"> 
+									<img src="img/product/discount_4.jpg" class="img-responsive"> 
+								</div>
+							</div>
+						</div>
+     	  </div>
      </div>
+     
+     <!--
+     	作者：738509878@qq.com
+     	时间：2016-09-02
+     	描述：微商城
+     -->
+     <div id="shop-box" class="shop-box">
+     	 <div class="subtitle-box">
+     	   	    <img src="img/subtitle/micro_mart.png"/>
+     	   	    <p class="subtitle">微商城</p>
+     	 </div> 
+     	 <div class="shop-show-box">
+     	 	  <div class="shop-show">
+     	 	  	 <div class="sj-content">
+						<div id="slideBox11" class="slideBox11">
+							<div class="bd">
+								<div class="tempWrap">
+									<ul class=" list-paddingleft-2">
+										<li>
+											<p><img src="img/shop/demo-j.png" title="商城首页-扫码查看惊喜多多" class="img-responsive"></p>
+										</li>
+										<li>
+											<p><img src="img/shop/demo-j.png" title="商城首页-扫码查看惊喜多多" class="img-responsive"></p>
+										</li>
+								</ul>
+							 </div>
+							</div>
+							<a class="prev" href="javascript:void(0)"></a>
+							<a class="next" href="javascript:void(0)"></a>
+						</div>
+					</div>
+     	 	     <img src="img/shop/mircro-shop-1.png" class="img-responsive"/>
+     	    </div>
+     	 </div>
+     </div>
+     
+     <!--
+     	作者：738509878@qq.com
+     	时间：2016-09-02
+     	描述：自媒体
+     -->
+     <div id="video-box" class="video-box">
+     	   <div class="subtitle-box">
+     	   	    <img src="img/subtitle/video.png"/>
+     	   	    <p class="subtitle">自媒体</p>
+     	   </div> 
+     </div>
+     
+     <!--
+     	作者：738509878@qq.com
+     	时间：2016-09-02
+     	描述：服务特色
+     -->
+     
+     <div id="service-box" class="service-box">
+     	   <div class="subtitle-box">
+     	   	    <img src="img/subtitle/service.png"/>
+     	   	    <p class="subtitle">服务特色</p>
+     	   </div> 
+     	   <div class="dwf-cont-box">
+
+				<div class="dtqw-min-box">
+					<div class="dtqw-header-box">
+						<div class="dtqw-cont-box1">
+								<div class="dtqw-cont-box-img">	
+							  	<img id="service-img"  src="img/service/delivery_2.png" class="img-responsive"/>
+							 </div>
+							<br><span>配送服务</span>
+						</div>
+						<div class="dtqw-cont-box1">
+							 <div class="dtqw-cont-box-img">
+							  	<img id="service-img" src="img/service/true_2.png" class="img-responsive"/>
+							 </div>
+								<br><span>正品保障</span>
+						</div>
+						<div class="dtqw-cont-box1">
+							 <div class="dtqw-cont-box-img">
+							  	<img id="service-img" src="img/service/back_2.png" class="img-responsive"/>
+							 </div>
+								<br><span>优质售后</span>
+						</div>
+						
+					  <div class="dtqw-cont-box1" >
+							 <div class="dtqw-cont-box-img">
+							  	<img id="service-img" src="img/service/present_2.png" class="img-responsive"/>
+							 </div>
+								<br><span>贴心礼品</span>
+							</div>
+
+					</div>
+					<div class="content">
+						<ul>
+							<li>
+								<p>
+									从食材捕捞或出库的那一刻起，每一份新鲜食材便进入全程恒温冷链的精心呵护。
+									<br>从恒温冷库到冷藏车，从密闭保险箱到蓄冷剂，我们的仓储配送人员在追求高效、快捷的同时，更保证了食物的新鲜和营养。
+									<br>1.仓库配备专业标准的冷藏库（0-4℃）和冷冻库（—18℃），依据每一种商品独特的保鲜需求分别储藏，以保证最佳食用口感。
+									<br>2.所有冷藏/冷冻商品全部采用低温分拣，独立包装。
+									<br>3.商品内包装材料全部使用环保包装，安全健康！
+									<br>4.使用可插型密闭环保泡沫箱，运输途中全程密闭！
+								</p>
+
+							</li>
+							<li>
+								<p>
+									从食材捕捞或出库的那一刻起，每一份新鲜食材便进入全程恒温冷链的精心呵护。
+									<br>从恒温冷库到冷藏车，从密闭保险箱到蓄冷剂，我们的仓储配送人员在追求高效、快捷的同时，更保证了食物的新鲜和营养。
+									<br>1.仓库配备专业标准的冷藏库（0-4℃）和冷冻库（—18℃），依据每一种商品独特的保鲜需求分别储藏，以保证最佳食用口感。
+									<br>2.所有冷藏/冷冻商品全部采用低温分拣，独立包装。
+									<br>3.商品内包装材料全部使用环保包装，安全健康！
+									<br>4.使用可插型密闭环保泡沫箱，运输途中全程密闭！
+								</p>
+							</li>
+							<li>
+								<p>
+									从食材捕捞或出库的那一刻起，每一份新鲜食材便进入全程恒温冷链的精心呵护。
+									<br>从恒温冷库到冷藏车，从密闭保险箱到蓄冷剂，我们的仓储配送人员在追求高效、快捷的同时，更保证了食物的新鲜和营养。
+									<br>1.仓库配备专业标准的冷藏库（0-4℃）和冷冻库（—18℃），依据每一种商品独特的保鲜需求分别储藏，以保证最佳食用口感。
+									<br>2.所有冷藏/冷冻商品全部采用低温分拣，独立包装。
+									<br>3.商品内包装材料全部使用环保包装，安全健康！
+									<br>4.使用可插型密闭环保泡沫箱，运输途中全程密闭！
+								</p>
+							</li>
+							
+							<li>
+								<p>
+									从食材捕捞或出库的那一刻起，每一份新鲜食材便进入全程恒温冷链的精心呵护。
+									<br>从恒温冷库到冷藏车，从密闭保险箱到蓄冷剂，我们的仓储配送人员在追求高效、快捷的同时，更保证了食物的新鲜和营养。
+									<br>1.仓库配备专业标准的冷藏库（0-4℃）和冷冻库（—18℃），依据每一种商品独特的保鲜需求分别储藏，以保证最佳食用口感。
+									<br>2.所有冷藏/冷冻商品全部采用低温分拣，独立包装。
+									<br>3.商品内包装材料全部使用环保包装，安全健康！
+									<br>4.使用可插型密闭环保泡沫箱，运输途中全程密闭！
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+     </div>
+     
+     <!--
+     	作者：738509878@qq.com
+     	时间：2016-09-02
+     	描述：商务合作
+     -->
+     
+     <div id="business-box" class="business-box">
+     	  <div class="subtitle-box">
+     	   	    <img src="img/subtitle/business.png"/>
+     	   	    <p class="subtitle">商务合作</p>
+     	  </div> 
+     	  <div class="business-img-presentation">
+     	  	<div class="fix-img">
+     	  		<img src="img/business/img_bussiness.png" class="img-responsive"/>
+     	  	</div>
+     	  	
+     	  </div>
+     	  <div class="business-desc-presentation">
+     	  	<div id="" style="vertical-align: middle;">
+     	  		<div class="sub-title">
+     	  			我们的初心
+     	  		</div>
+     	  	  
+     	  	  <div class="sub-content">
+     	  	  	<p>● 深入产地，进入市场第一线，优选靠谱的好货
+								<br>● 在乎每一个用户的反馈。客服团队日夜陪伴， 力求第一时间解答疑问
+								<br>● 希望拼团购是一种生活方式，能够拉进您与您身边的人之间的距离。
+								<br>● 该网站并不用作拼好货商品交易，仅供用户了解拼好货手机app，更多
+								<br>优惠欢迎下载使用				
+								<br>从原产地和一级产地市场挑选优质货品，通过快递直达消费者手上。我们
+								<br>希望每一步都可以透明化：水果从产地到你手里，每一步可以看到。这是
+								<br>我们每天的工作，不断重复，不断进步。每一个顾客对我们都一样的重要。
+								<br>
+								<br>果园果农请联系拼好货：caigou@yiran.com（注明果品&产地）
+								<br>拼好货市场合作：0571-87183283
+					  	</p>
+     	  	 </div>
+     	  </div>
+     	  </div>
+     </div>
+     
+     <!--
+     	作者：738509878@qq.com
+     	时间：2016-09-02
+     	描述：关于我们
+     -->
+     <div id="about-box" class="aboutus-box">
+     	  <div class="subtitle-box">
+     	   	    <img src="img/subtitle/about_us.png"/>
+     	   	    <p class="subtitle">关于我们</p>
+     	  </div>
+     	  
+     	  <div class="about-desc-presentation">
+     	  	 <div class="sub-title">鲜品上佳<br><br>带你领略舌尖上的世界</div>
+     	  	 <div class="sub-content">
+     	  	 	<p>
+     	  	 		鲜品上佳是—— 杭州昭康贸易有限公司旗下品牌。为
+							<br>您提供全球进口的即食美味，让您享受极速的同城速
+							<br>递和优质的日式服务。
+							<br>在各生鲜食品电商竞争日益激烈的今天，鲜品上佳将
+							<br>用全球口碑美味即食、极速优质的配送系统和细致体
+							<br>贴的服务体系，打造您优质的购物体验
+     	  	 	</p>
+     	  	 </div>
+     	  </div>
+     	  
+     	  <div class="about-img-presentation">
+     	    <div id="owl-about" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                <div class="item">
+			    				<img src="img/about/about-01.jpg" class="img-responsive" alt="">
+			    			</div>
+			    			<div class="item" >
+			    				<img src="img/about/about-02.jpg" class="img-responsive" alt="">
+			    			</div>
+			    			<div class="item">
+			    				<img src="img/about/about-03.jpg" class="img-responsive" >
+			    			</div>
+           </div>
+     	  </div>
+     </div>
+     
+     <!--
+     	作者：738509878@qq.com
+     	时间：2016-09-02
+     	描述：页脚
+     -->
+     <div class="footer">
+     	
+     	 <div class="footer-box">
+     	 	  <div class="footer-logo">
+     	  	  <img src="img/footer/footer-logo.png" class="img-responsive"/>
+            <div class="footer-logo-contact">
+        	    <p>关注我们
+        	    <img src="img/footer/img_wb.png" class="img-responsive"/>
+        	    <img src="img/footer/img_wx.png" class="img-responsive"/>
+        	    </p> 	
+        	   	
+            </div>
+     	    </div>
+     	    <div class="footer-other">
+     	  	    <div class="footer-other-introduct">
+     	  	    	<dl>
+                    <dt>鲜品承诺</dt>
+                    <dd><a href="/product.html">正品承诺</a></dd>
+                    <dd><a href="/product-international-sms.html">海外直购</a></dd>
+                    
+               </dl>
+               
+               <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="/product.html">购物流程</a></dd>
+                    <dd><a href="/product-international-sms.html">支付方式</a></dd>
+                    <dd><a href="/product-voice.html">优惠券说明</a></dd>
+                    <dd><a href="/product-flow.html">常见问题</a></dd>
+               </dl>
+               
+               <dl>
+                    <dt>物流配送</dt>
+                    <dd><a href="/product.html">运费计算</a></dd>
+                    <dd><a href="/product-international-sms.html">配送方式</a></dd>
+                    <dd><a href="/product-voice.html">物流跟踪</a></dd>
+                    <dd><a href="/product-flow.html">收货事项</a></dd>
+               </dl>
+               
+               <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="/product.html">消费者告知书</a></dd>
+                    <dd><a href="/product-international-sms.html">退换货政策</a></dd>
+                    <dd><a href="/product-voice.html">退货流程</a></dd>
+                    <dd><a href="/product-flow.html">取消订单</a></dd>
+                    <dd><a href="/product-flow.html">退款说明</a></dd>      
+               </dl>
+               
+               <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="/product.html">联系我们</a></dd>
+                    <dd><a href="/product-international-sms.html">招商合作</a></dd>
+                    <dd><a href="/product-voice.html">招聘信息</a></dd>
+                        
+               </dl>
+               <div class="footer-other-img">
+     	  	    	<img src="img/footer/qrcode_for_shop.png" class="img-responsive"/><br>
+     	  	    	<span>扫描进入微商城</span>
+     	  	    </div>
+     	  	    </div>  
+     	    </div>
+     	 </div> 
+     	  
+     </div>
+     
+     <div class="company">
+           <div class="sub-title">
+     	  			Copyright©2016 杭州昭康贸易有限公司　浙ICP备15016828号-3
+     	  		</div>
+     </div>
+    
   </body>
 </html>

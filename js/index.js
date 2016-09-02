@@ -17,7 +17,78 @@
 			$('.header').show(1000);
 		}
 	});
-  
+	
+//		$('#carousel').carouFredSel({
+//					width: 1200,
+//					height: 500,
+//					align: true,
+//					circular:true,
+//					padding: [0, 750, 0, 0],
+//					items: {
+//						width: 100,
+//						height: 525,
+//						visible: 5,
+//						minimum: 1
+//					},
+//					scroll: {
+//						items: 1,
+//						duration: 750,
+//						onBefore: function( data ) {
+//							data.items.old.add( data.items.visible ).find( 'span' ).stop().slideUp();
+//						},
+//						onAfter: function( data ) {
+//							data.items.visible.last().find( 'span' ).stop().slideDown();
+//						}
+//					},
+//					auto: false,
+//					onCreate: function() {
+//						$(this).children().each(function() {
+//							$(this).append( '<span>' + $('img', this).attr( 'alt' ) + '</span>' );
+//							$(this).find( 'span' ).hide();
+//						});
+//					}
+//				});
+//				$('#carousel').children().click(function() {
+//				$('#carousel').trigger( 'slideTo', [this, -4, 'prev'] );
+//      });
+//      
+ 
+     $(".serBox").hover(function () {
+		   $(this).children().stop(false,true);
+		   $(this).children(".serBoxOn").fadeIn("slow");
+	     $(this).children(".pic1").animate({right: -110},400);
+	     $(this).children(".pic2").animate({left: 41},400);
+	     $(this).children(".txt1").animate({left: -240},400);
+	     $(this).children(".txt2").animate({right: 0},400);	
+     },function () {
+		   $(this).children().stop(false,true);
+		   $(this).children(".serBoxOn").fadeOut("slow");
+		   $(this).children(".pic1").animate({right:41},400);
+	     $(this).children(".pic2").animate({left: -110},400);
+	     $(this).children(".txt1").animate({left: 0},400);
+	     $(this).children(".txt2").animate({right: -240},400);	
+     });
+
+      var number = 0;
+      $('.dtqw-min-box .content ul').width(890*$('.dtqw-min-box .content li').length+'px');
+			$(".dtqw-min-box .dtqw-header-box .dtqw-cont-box1").mouseover(function(){
+				$(this).addClass('on').siblings().removeClass('on');
+				var img=$(this).find("#service-img");
+				
+				img.attr("src",img.attr("src").replace("_2","_1")); 
+				var index = $(this).index();
+				number = index;
+				var distance = -890*index;
+				$('.dtqw-min-box .content ul').stop().animate({
+					left:distance
+				});
+			});
+			
+			$(".dtqw-min-box .dtqw-header-box .dtqw-cont-box1").mouseout(function(){
+				var img=$(this).find("#service-img");
+				img.attr("src",img.attr("src").replace("_1","_2")); 
+			});
+
  })
   
   //加载轮播图相关
@@ -30,11 +101,11 @@
 			navigation: false,
             goToFirst: true,
             goToFirstSpeed: 2000,
-			slideSpeed: 700,
-			pagination: true,
-			transitionStyle: "fade",
-			singleItem: true,
-			afterInit: function() {
+					slideSpeed: 700,
+					pagination: true,
+					transitionStyle: "fade",
+					singleItem: true,
+					afterInit: function() {
                 $('#home-slider').height($(window).height());
                 if (!$('#home-slider').hasClass('fixed-height')) {
                     $('#home-slider #owl-main .item').height($(window).height());
@@ -89,26 +160,25 @@
     		transitionStyle: "fadeUp",
     		singleItem: true
     	});
+    	
+    $("#owl-about").owlCarousel({
+        autoPlay: 5000,
+        navigation: false,
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        singleItem: true,
+        paginationNumbers:false,
+        pagination:false
+    });
+
 		//Set home slider height on resize
 	  $(window).resize(function () { 
 	        $('#home-slider').height($(window).height());
 	        if ($(window).width() >1024) { $('.slider-parallax').css('padding-top', $(window).height() + 'px'); }
 	  });
 	  
-	  $('#outer').unleash({
-			          duration: 700,
-				        childClassName: '.box',
-				        captionClassName: '.caption_1',
-                SliderWidth: '940px',
-				        OpenFirstOnload: true,
-                SliderHeight: '300px',
-                width: 0.63,
-                Event: "hover",
-                easing:  "easeOutQuad",
-				        captionEasing:  "easeInOutBack",
-                CollapseOnMouseLeave: true,
-                CaptionAnimation: "pop-up"
-			});
+	  
+	  
 })
 
 //动画相关
