@@ -1,6 +1,7 @@
 .home-box{
 	/*min-height: 800px;*/
     width: 100%;
+    
     background-image: none;
 }
 
@@ -23,6 +24,7 @@
     text-align: center;
     top: 50px;
     width: 100%;
+    min-width: 1200px;
     z-index: 1001;
 }
 .navbar-brand {	
@@ -101,13 +103,15 @@
     position: relative;
     top: -230px;
     width: 100%;
+    min-width: 1200px;
     z-index: 9999;
 }
 
 .slide-content {
     bottom: 10px;
     display: table-cell;
-    height: 200px;
+    height: 180px;
+    /*height: 200px;*/
     left: 0px;
     margin: auto;
     position: absolute;
@@ -120,9 +124,7 @@
     bottom: -200px ! important;
 }
 
-#owl-main-text {
-    margin-top: -350px ! important;
-}
+
 
 #owl-main-text {
     margin-bottom: 0px;
@@ -148,6 +150,7 @@
 	left: 0;
     top: 0;
     width: 100%;
+    min-width: 1200px;
     background-color: #45413f;
     z-index: 9999;
 }
@@ -212,6 +215,7 @@
 	min-height: 800px;
 	margin-top:40px ;
     width: 100%;
+    min-width: 1200px;
     background-image: none);
 }
 
@@ -405,12 +409,13 @@
 .discount{
 	padding-top: 40px;
 	width: 100%;
-	min-width: 1000px;
+	min-width: 1200px;
 	background-color: #f2f2f2;
 }
 
 .servicesBox {
 	width: 80%;
+	min-width: 1000px;
     height: 440px;
     margin: 0 auto;
     clear: both;
@@ -485,28 +490,129 @@
 
 /*微商城*/
 .shop-box{
-	min-height: 600px;
+	min-height: 900px;
 	margin-top:50px ;
     width: 100%;
+    min-width: 1200px;
     background-image: none);
 }
 
 .shop-show-box{
 	width: 100%;
 	text-align: center;
+	 min-width: 1200px;
 	/*background-color: #45413f;*/
 
 }
-
+.shop-show-box .shop-qrcode{
+	float: left;
+	width: 150px;
+	margin-left: 15%;
+	margin-top:150px;
+}
 
 
 .shop-show{
 	width: 100%;	
+	min-width: 1200px;
 	text-align: center;
 	margin: 0 auto;
 }
 
+.what-max-box {
+    height: 900px;
+    /* background-color: #2b282b; */
+    background-image: url("../img/shop/bg.jpg");
+   background-size: 100%;
+    
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/shop/bg.jpg',  sizingMethod='scale');
+    -moz-background-size:1460px;
+    background-repeat: no-repeat;
+    +background-repeat:repeat-y;
+    _background-repeat:repeat-y;
+    background-repeat:repeat-y\9;
+    background-position: 0px 145px;
+    background-position: 0px\9 300px\9;
+    +background-position: 0px 300px;
+    _background-position:0px 300px;
+}
+
+.dwf-cont-box {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    position: relative;
+}
+
+
+.sj-content {
+    left: 385px;
+    top: 150px;
+    width: 325px;
+    height: 580px;
+    text-align: right;
+    overflow: auto;
+    position: absolute;
+    z-index: 1;
+}
+.sj-content img {
+    vertical-align: bottom;
+}
 .slideBox11 {
+    width: 100%;
+    height: 580px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideBox11 .bd {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    z-index: 0;
+}
+
+.slideBox11 .bd li {
+    overflow: auto;
+    height: 580px;
+    float: left;
+    width: 320px;
+}
+
+
+.slideBox11 .bd li p {
+    height: 100%;
+}
+.slideBox11 .bd li img {
+    width: 100%;
+    
+}
+.what-img {
+    position: absolute;
+    left: 350px;
+    
+}
+.slideBox11 .prev, .slideBox11 .next {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    width: 32px;
+    height: 40px;
+    background: url(http://www.ecmoban.com/content/themes/ecmoban2014/images/goods-direction.png) -110px 5px no-repeat #000;
+    filter: alpha(opacity=10);
+    opacity: 0.1;
+}
+.slideBox11 .next {
+    left: auto;
+    right: 2%;
+    background-position: 8px 5px;
+}
+
+
+/*.slideBox11 {
     width: 100%;
     height: 547px;
     overflow: hidden;
@@ -553,7 +659,7 @@
     height: 547px;
     float: left;
     width: 320px;
-}
+}*/
 
 
 /**
@@ -562,6 +668,7 @@
 .video-box{
 	min-height: 600px;
 	margin-top:50px ;
+	min-width: 1200px;
     width: 100%;
 }
 
@@ -628,17 +735,11 @@
 	min-height: 600px;
 	margin-top:50px ;
     width: 100%;
+    min-width: 1200px;
     background-image: none;
     margin: 0px auto;
 }
 
-.dwf-cont-box {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    padding-top: 40px;
-    position: relative;
-}
 
 .dtqw-min-box {
     width: 100%;
@@ -703,6 +804,7 @@
 	min-height: 640px;
 	margin-top:50px ;
     width: 100%;
+    min-width: 1200px;
     background-image: none);
 }
 
@@ -763,6 +865,7 @@
 	min-height: 600px;
 	margin-top:50px ;
     width: 100%;
+    min-width: 1200px;
     background-image: none;
 }
 
@@ -781,7 +884,8 @@
 .about-desc-presentation {
 	float: left;
     width: 50%;
-    min-height:485px ;
+    min-height:493px ;
+    min-height:489px\9 ;
     +min-height:485px ;
     _min-height:485px ;
     text-align: center;
@@ -814,6 +918,7 @@
 
 .footer{
     width: 100%;
+    min-width: 1200px;
     margin: 0 auto;
     min-height: 150px ;
     margin-top: 150px;
@@ -914,7 +1019,7 @@
 .company .sub-title {
     color: #ffffff;
     letter-spacing: 2px;
-
+    min-width: 1200px;
     padding: 50px 15%;
     text-align: center;
     

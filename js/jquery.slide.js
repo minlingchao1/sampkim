@@ -66,7 +66,7 @@
 			var returnDefault = (opts.returnDefault=="false"||opts.returnDefault==false)?false:true;
 
 			var slideH=0;
-			var slideW=0;
+			var slideW=10;
 			var selfW=0;
 			var selfH=0;
 			var easing=opts.easing;
@@ -167,7 +167,7 @@
 				{
 					case "fold": conBox.css({"position":"relative","width":slideW,"height":slideH}).children().css( {"position":"absolute","width":selfW,"left":0,"top":0,"display":"none"} ); break;
 					case "top": conBox.wrap('<div class="tempWrap" style="overflow:hidden; position:relative; height:'+vis*slideH+'px"></div>').css( { "top":-(index*scroll)*slideH, "position":"relative","padding":"0","margin":"0"}).children().css( {"height":selfH} ); break;
-					case "left": conBox.wrap('<div class="tempWrap" style="overflow:hidden; position:relative; width:'+vis*slideW+'px"></div>').css( { "width":conBoxSize*slideW,"left":-(index*scroll)*slideW,"position":"relative","overflow":"hidden","padding":"0","margin":"0"}).children().css( {"float":"left","width":selfW} ); break;
+					case "left": conBox.wrap('<div class="tempWrap" style="overflow:hidden; position:relative; width:'+(vis*slideW+10)+'px"></div>').css( { "width":conBoxSize*slideW+20,"left":-(index*scroll)*slideW,"position":"relative","overflow":"hidden","padding":"0","margin":"0"}).children().css( {"float":"left","width":selfW+20} ); break;
 					case "leftLoop":
 					case "leftMarquee":
 						cloneEle();
