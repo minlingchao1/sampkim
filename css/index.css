@@ -231,12 +231,139 @@
     text-transform: uppercase;
 }
 
-.subtile-img{
-	background-image: url(../img/product/product_bg.jpg);
-	min-height: 550px;
-	width: 100%;
-	
+.block3 {
+    background: url(../img/product/product_bg.jpg) no-repeat center top;
+    height: 554px;
+    overflow: hidden;
 }
+
+.block3 ul {
+    width: 1076px;
+    height: 485px;
+    margin: 34px auto 0;
+}
+
+.block3 ul li {
+    float: left;
+    width: 100px;
+    height: 485px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 3px;
+    position: relative;
+    -webkit-transition: width .6s;
+    -moz-transition: width .6s;
+    -ms-transition: width .6s;
+    -o-transition: width .6s;
+    transition: width .6s;
+}
+
+.block3 ul #feature5 .s,  .block3 ul #feature1 .s, .block3 ul #feature2 .s, .block3 ul #feature3 .s, .block3 ul #feature4 .s {
+    background-image: url(../img/product/products.png)
+}
+
+.block3 ul li .s {
+    width: 100px;
+    height: 485px;
+    -webkit-transition: width .6s;
+    -moz-transition: width .6s;
+    -ms-transition: width .6s;
+    -o-transition: width .6s;
+    transition: width .6s;
+    float: left;
+}
+.block3 ul li .big {
+    float: left;
+    height: 485px;
+    -webkit-transition: width .6s;
+    -moz-transition: width .6s;
+    -ms-transition: width .6s;
+    -o-transition: width .6s;
+    transition: width .6s;
+    width: 0;
+}
+
+.block3 ul li.current{
+	width:661px;
+	cursor:auto
+}
+.block3 ul li.current p{
+	display:block
+}
+.block3 ul li.current .s{
+	width:0
+}
+.block3 ul li.current .big{
+	width:661px;
+}
+
+
+
+.block3 ul #feature1 .s {
+    background-position: -800px 0px;
+}
+.block3 ul #feature1 .s {
+    background-position: -800px 0px;
+}
+
+.block3 ul #feature1 .s {
+    background-repeat: no-repeat;
+}
+
+
+.block3 ul #feature1 .big {
+    background: url(../img/product/shenghao.png) no-repeat left top;
+}
+
+
+.block3 ul #feature2 .s {
+    background-position: -800px -485px;
+}
+
+.block3 ul #feature2 .s {
+    background-repeat: no-repeat;
+}
+
+.block3 ul #feature2 .big {
+    background: url(../img/product/huotui.png) no-repeat left top;
+}
+
+
+.block3 ul #feature3 .s {
+    background-position: -800px -970px;
+}
+
+.block3 ul #feature3 .s {
+    background-repeat: no-repeat;
+}
+.block3 ul #feature3 .big {
+    background: url(../img/product/fish.png) no-repeat left top;
+}
+
+.block3 ul #feature4 .s {
+    background-position: -800px -1455px;
+}
+
+.block3 ul #feature4 .s {
+    background-repeat: no-repeat;
+}
+.block3 ul #feature4 .big {
+    background: url(../img/product/xia.png) no-repeat left top;
+}
+
+.block3 ul #feature5 .big {
+    background: url(../img/product/drink_in.png) no-repeat left top;
+}
+
+.block3 ul #feature5 .s {
+    background-position: -574px 0px;
+}
+
+.block3 ul #feature5 .s {
+    background-repeat: no-repeat;
+}
+
+
 
 .subshow{
 	 

@@ -18,41 +18,48 @@
 		}
 	});
 	
-//		$('#carousel').carouFredSel({
-//					width: 1200,
-//					height: 500,
-//					align: true,
-//					circular:true,
-//					padding: [0, 750, 0, 0],
-//					items: {
-//						width: 100,
-//						height: 525,
-//						visible: 5,
-//						minimum: 1
-//					},
-//					scroll: {
-//						items: 1,
-//						duration: 750,
-//						onBefore: function( data ) {
-//							data.items.old.add( data.items.visible ).find( 'span' ).stop().slideUp();
-//						},
-//						onAfter: function( data ) {
-//							data.items.visible.last().find( 'span' ).stop().slideDown();
-//						}
-//					},
-//					auto: false,
-//					onCreate: function() {
-//						$(this).children().each(function() {
-//							$(this).append( '<span>' + $('img', this).attr( 'alt' ) + '</span>' );
-//							$(this).find( 'span' ).hide();
-//						});
-//					}
-//				});
-//				$('#carousel').children().click(function() {
-//				$('#carousel').trigger( 'slideTo', [this, -4, 'prev'] );
-//      });
-//      
- 
+	/**
+	 * 产品展示 
+	 */
+	var n=1;
+	$(".block3 ul li").click(function() {
+        if (1 == window.mdslide || $(this).hasClass("current")) return ! 1;
+        var e = $(this).index();
+        n = e,
+        window.mdslide = !0,
+        $(".block3 ul li.current").removeClass("current");
+        var t = $(this);
+        return t.addClass("current"),
+        $(".block3 ul li").find("p").hide(),
+        setTimeout(function() {
+            t.find("p").show()
+        },
+        400),
+        setTimeout(function() {
+            window.mdslide = !1
+        },
+        900),
+        !1
+    });
+    var t = $(".block3 ul li").length,
+    i = setInterval(function() {
+        $(".block3 ul li").eq(n).click(),
+        n += 1,
+        n == t && (n = 0)
+    },
+    4e3);
+    $(".block3 ul").hover(function() {
+        clearInterval(i)
+    },
+    function() {
+        i = setInterval(function() {
+            $(".block3 ul li").eq(n).click(),
+            n += 1,
+            n == t && (n = 0)
+        },
+        4e3)
+    }),
+
      $(".serBox").hover(function () {
 		   $(this).children().stop(false,true);
 		   $(this).children(".serBoxOn").fadeIn("slow");
@@ -193,8 +200,6 @@ jQuery(document).ready(function($) {
     });
     function Move(seccio){
         jQuery(seccio).each(function(){
-            //var posY = jQuery(window).scrollTop()+jQuery(window).height()-jQuery(this).attr('yPos')/10+jQuery(this).height()+'px';
-            //jQuery(this).css('background-position', '0 ' + posY);
             $(this).css('background-position', '0 '+(($(window).scrollTop()+$(window).height()-$(this).attr('yPos'))/3+$(this).height())+'px');
 
 
