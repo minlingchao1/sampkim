@@ -781,7 +781,7 @@
 .about-desc-presentation {
 	float: left;
     width: 50%;
-    min-height:493px ;
+    min-height:485px ;
     +min-height:485px ;
     _min-height:485px ;
     text-align: center;
