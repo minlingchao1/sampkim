@@ -563,10 +563,64 @@
 	min-height: 600px;
 	margin-top:50px ;
     width: 100%;
-    background-image: none);
 }
 
 
+.video {
+    background-image: url("../img/video/video_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+   
+    width: 100%;
+    width: 100%;
+    min-height: 400px;
+}
+
+
+.video .container {
+    vertical-align: middle;
+}
+
+.container {
+    margin: 0px auto;
+    padding-top: 140px;
+    width: 100%;
+}
+
+.video .jt_row {
+    padding-bottom: 90px;
+}
+
+.video p {
+    font-family: "微软雅黑";
+    font-size: 26px;
+    margin-top: 30px;
+    padding: 0px 24%;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.video h3::before {
+    background-color: #ffffff;
+    bottom: -25px;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+
+.center {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.column_container{
+	position: relative
+}
 /**
  *服务特色 
  */
@@ -867,3 +921,61 @@
     font-size: 15px;
 }
 
+#sidebar {
+    position: fixed;
+    width: 150px;
+    height: 534px;
+    /*background: url(http://res.qn.netease.com/pc/gw/20160803200535/img/box_sidebar_331abb1.png) no-repeat left top;*/
+    right: 0;
+    top: 50%;
+    margin-top: -267px;
+    z-index: 9999;
+    -webkit-transition: all .3s linear 0s;
+    -moz-transition: all .3s linear 0s;
+    -ms-transition: all .3s linear 0s;
+    -o-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+}
+#sidebar .sidebar-btn {
+    position: absolute;
+    left: -24px;
+    width: 24px;
+    top: 132px;
+    height: 58px;
+    padding-top: 3px;
+    background: #ee6700;
+    color: #fff;
+    text-align: center;
+}
+
+#sidebar .sidebar-btn em {
+    width: 24px;
+    display: inline-block;
+    text-align: center;
+}
+#sidebar .sidebar-btn .icon {
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+#content i, #sidebar i, #content em, #sidebar em {
+    font-weight: 400;
+    font-style: normal;
+}
+
+#content .more:hover i, .icon26, .icon2, .icon1 {
+    /*background-image: url(http://res.qn.netease.com/pc/gw/20160803200535/img/spriter/style_z_7ff5960.png);*/
+}
+
+#sidebar .sidebar-box {
+    padding-top: 110px;
+}
+
+#sidebar .sidebar-code {
+    background-position: -170px -350px;
+}
+#sidebar .sidebar-code {
+    width: 150px;
+    height: 170px;
+    background-repeat: no-repeat;
+}

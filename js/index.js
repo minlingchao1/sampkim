@@ -96,6 +96,14 @@
 				img.attr("src",img.attr("src").replace("_1","_2")); 
 			});
 
+      /**
+       * 
+       */
+      $("#sidebar .sidebar-btn").click(function() {
+            var e = $("#sidebar");
+            return e.width() > 50 ? ($(this).find("em").html("\u5c55\u5f00"), e.width(0)) : ($(this).find("em").html("\u6536\u8d77"), e.width(150)),
+            !1
+      });
  })
   
   //加载轮播图相关
