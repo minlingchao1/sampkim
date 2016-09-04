@@ -1033,4 +1033,7 @@
       height: 350px;
       bottom: 0px ! important;
    }
+   #home-slider{
+   	width: 100%;
+   }
 }
