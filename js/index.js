@@ -115,6 +115,7 @@
 
 	
 	//轮播图高度
+	$('#home-slider').height($(window).height());
 	$("#owl-main").owlCarousel({
 			autoPlay: 3500,
 			navigation: false,
