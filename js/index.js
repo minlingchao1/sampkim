@@ -139,9 +139,10 @@
                 var left = ((($('#home-slider').width() - $('#home-slider #owl-main img').width())/2));
                 if (left<0) {
                     $('#home-slider #owl-main img').css('top', '0px' );
-
+                    alert(left)
                     $('#home-slider #owl-main img').css('left', left + 'px' );
                 } else {
+                	alert(left)
                     $('#home-slider #owl-main img').css('left', '0px' );
                     $('#home-slider #owl-main img').height('auto');
                     $('#home-slider #owl-main img').width($(window).width());
