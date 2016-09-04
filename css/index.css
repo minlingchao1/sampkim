@@ -106,9 +106,18 @@
     width: 100%;
     z-index: 9999;
 }
-#owl-main{ width:100%; min-height:100%; height:auto !important; height:100%; position:fixed; top:0; left:0; }
-img.bg { position:absolute; top: 0px; left: 0px; z-index:1; display:none;}
 
+#owl-main .owl-item {
+     overflow: hidden;
+}
+
+
+#owl-main img {
+    max-width: none;
+  
+    position: absolute;
+    top: 0px;
+}
 
 .slide-content {
     bottom: 10px;
@@ -1024,7 +1033,5 @@ img.bg { position:absolute; top: 0px; left: 0px; z-index:1; display:none;}
       height: 350px;
       bottom: 0px ! important;
    }
-   #home-slider{
-   	width: 100%;
-   }
+   
 }
