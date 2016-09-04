@@ -139,7 +139,7 @@
         
         $('#home-slider #owl-main img').width('auto');
         
-        var left = 1;
+        var left = ((($('#home-slider').width() - $('#home-slider #owl-main img').width())/2));
         if (left<0) {
             $('#home-slider #owl-main img').css('top', '0px' );
             //alert(left)
