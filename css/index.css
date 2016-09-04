@@ -110,6 +110,14 @@
 #owl-main .owl-item {
      overflow: hidden;
 }
+
+
+#owl-main img {
+    max-width: none;
+    position: absolute;
+    top: 0px;
+}
+
 .slide-content {
     bottom: 10px;
     display: table-cell;
@@ -146,6 +154,13 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+
+#owl-main-text .item {
+    padding-bottom: 58px;
+    position: relative;
+}
+
 /**
  * 子标题
  */
@@ -996,4 +1011,25 @@
     width: 150px;
     height: 170px;
     background-repeat: no-repeat;
+}
+
+@media only screen and (max-height: 1024px)
+{
+   .slide-content {
+     bottom: -200px ! important;
+   }
+}
+
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px)
+{
+  .slide-content {
+    height: 350px;
+    bottom: 0px ! important;
+   }
+}
+@media only screen and (max-device-width: 568px) and (min-device-width: 320px){
+	.slide-content {
+      height: 350px;
+      bottom: 0px ! important;
+   }
 }
