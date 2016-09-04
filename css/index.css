@@ -506,12 +506,13 @@
    background-size: 100%;
     
     filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/shop/bg.jpg',  sizingMethod='scale');
-    -moz-background-size:1460px;
+    -moz-background-size:100%;
     background-repeat: no-repeat;
+    
     +background-repeat:repeat-y;
     _background-repeat:repeat-y;
     background-repeat:repeat-y\9;
-    background-position: 0px 190px;
+    background-position:0px 200px;
     background-position: 0px\9 300px\9;
     +background-position: 0px 300px;
     _background-position:0px 300px;
