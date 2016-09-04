@@ -9,7 +9,7 @@ time, mark, audio, video, input
 {margin:0; padding:0; border:none; outline:0; font-size:100%; font-family:"Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti,  Heiti, SimSun, sans-serif; vertical-align:baseline;}
 html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {-webkit-text-size-adjust: none;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-html{ -webkit-text-size-adjust: none; }
+
 ol, ul, li {
     list-style: none;
 }

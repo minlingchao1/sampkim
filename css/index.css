@@ -114,8 +114,7 @@
 
 #owl-main img {
     max-width: none;
-  
-    position: absolute;
+
     top: 0px;
 }
 
@@ -486,8 +485,9 @@
 .shop-show-box .shop-qrcode{
 	float: left;
 	width: 150px;
-	margin-left: 15%;
+	margin-left: 10%;
 	margin-top:150px;
+	;
 }
 
 
@@ -497,6 +497,7 @@
 	text-align: center;
 	margin: 0 auto;
 }
+
 
 .what-max-box {
     height: 900px;
@@ -524,7 +525,6 @@
     padding-top: 40px;
     position: relative;
 }
-
 
 .sj-content {
     left: 385px;
