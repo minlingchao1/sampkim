@@ -111,12 +111,10 @@
 	
 	  $(window).resize(function () { 
         $('#home-slider').height($(window).height());
-        if ($(window).width() >1024) { $('.slider-parallax').css('padding-top', $(window).height() + 'px'); }
     });
 
 	
 	//轮播图高度
-	$('#home-slider').height($(window).height());
 	$("#owl-main").owlCarousel({
 			autoPlay: 3500,
 			navigation: false,
