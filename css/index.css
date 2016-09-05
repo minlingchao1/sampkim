@@ -508,13 +508,10 @@
     filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/shop/bg.jpg',  sizingMethod='scale');
     -moz-background-size:100%;
     background-repeat: no-repeat;
-    
-    +background-repeat:repeat-y;
-    _background-repeat:repeat-y;
     background-repeat:repeat-y\9;
     background-position:0px 300px;
     background-position: 0px\9 300px\9;
-    +background-position: 0px 300px;
+    +background-position: 0px 100px;
     _background-position:0px 300px;
 }
 

@@ -6,18 +6,7 @@
   
   //初始化
   $(document).ready(function(){
-  	var LH = document.getElementById("about-desc-presentation").offsetHeight; 
-	
-	var RH = document.getElementById("about-img-presentation").offsetHeight;;  
-	console.log(RH)
-	if(LH > RH){
-		console.log("2222222222222")
-	document.getElementById("about-img-presentation").style.height = LH;
-	}else{
-		console.log("111111111111");
-	document.getElementById("about-desc-presentation").style.height = RH;
-	
-	}
+ 
   	$('#nav').onePageNav({
 		scrollThreshold: 0.3
 	});
@@ -126,7 +115,7 @@
       	showOn:"hover",
       	alignTo: 'target',
         alignX: 'center',
-        alignY: 'bottom',
+        alignY: 'bottom'
         
       });
       $('#wx').poshytip({
@@ -135,7 +124,7 @@
       	showOn:"hover",
       	alignTo: 'target',
         alignX: 'center',
-        alignY: 'bottom',
+        alignY: 'bottom'
       });
       
 
