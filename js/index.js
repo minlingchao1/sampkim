@@ -2,8 +2,22 @@
 (function($){
   
   
+  
+  
   //初始化
   $(document).ready(function(){
+  	var LH = document.getElementById("about-desc-presentation").offsetHeight; 
+	
+	var RH = document.getElementById("about-img-presentation").offsetHeight;;  
+	console.log(RH)
+	if(LH > RH){
+		console.log("2222222222222")
+	document.getElementById("about-img-presentation").style.height = LH;
+	}else{
+		console.log("111111111111");
+	document.getElementById("about-desc-presentation").style.height = RH;
+	
+	}
   	$('#nav').onePageNav({
 		scrollThreshold: 0.3
 	});
@@ -78,10 +92,11 @@
 
       var number = 0;
       $('.dtqw-min-box .content ul').width(890*$('.dtqw-min-box .content li').length+'px');
+      
+      
 			$(".dtqw-min-box .dtqw-header-box .dtqw-cont-box1").mouseover(function(){
 				$(this).addClass('on').siblings().removeClass('on');
 				var img=$(this).find("#service-img");
-				
 				img.attr("src",img.attr("src").replace("_2","_1")); 
 				var index = $(this).index();
 				number = index;
@@ -104,6 +119,26 @@
             return e.width() > 50 ? ($(this).find("em").html("\u5c55\u5f00"), e.width(0)) : ($(this).find("em").html("\u6536\u8d77"), e.width(150)),
             !1
       });
+      
+      $('#wb').poshytip({
+      	content:"<img src=\"img/footer/qrcode_wb.png\"/>",
+      	className: 'tip-yellow',
+      	showOn:"hover",
+      	alignTo: 'target',
+        alignX: 'center',
+        alignY: 'bottom',
+        
+      });
+      $('#wx').poshytip({
+      	content:"<img src=\"img/footer/qrcode_wx.png\"/>",
+      	className: 'tip-yellow',
+      	showOn:"hover",
+      	alignTo: 'target',
+        alignX: 'center',
+        alignY: 'bottom',
+      });
+      
+
  })
   
   //加载轮播图相关

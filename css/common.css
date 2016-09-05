@@ -22,6 +22,9 @@ a{
     display: table;
 }
 
+.col-md-6 {
+    width: 50%;
+}
 
 .clearfix::after, .jt_row::after {
     clear: both;

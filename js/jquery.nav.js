@@ -105,6 +105,7 @@
 		},
 
 		getHash: function($link) {
+			
 			return $link.attr('href').split('#')[1];
 		},
 
@@ -120,6 +121,7 @@
 
 				if($target.length) {
 					topPos = $target.offset().top;
+					
 					self.sections[linkHref] = Math.round(topPos);
 				}
 			});

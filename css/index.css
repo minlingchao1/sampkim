@@ -43,8 +43,9 @@
 	display: block;
 }
 #home-slider{
-	min-height: 800px;
+	min-height: :;00px;
 	width: 100%;
+	min-width: 1200px;
 }
 
 #header-title{
@@ -104,6 +105,7 @@
     position: relative;
     top: -150px;
     width: 100%;
+    min-width: 1200px;
     z-index: 9999;
 }
 
@@ -113,8 +115,7 @@
 
 
 #owl-main img {
-    max-width: none;
-
+	min-width: 1200px;
     top: 0px;
 }
 
@@ -391,7 +392,7 @@
 }
 
 .servicesBox {
-	width: 80%;
+	width: 960px;
     min-width: 1000px;
     height: 440px;
     margin: 0 auto;
@@ -404,7 +405,6 @@
 	cursor:pointer;
 	display:inline;
 	width:24%;
-	
 	height:400px;
 	float:left;
 	overflow:hidden;
@@ -468,7 +468,7 @@
 
 /*微商城*/
 .shop-box{
-	min-height: 900px;
+	min-height: 1000px;
 	margin-top:50px ;
     width: 100%;
     min-width: 1200px;
@@ -512,14 +512,14 @@
     +background-repeat:repeat-y;
     _background-repeat:repeat-y;
     background-repeat:repeat-y\9;
-    background-position:0px 200px;
+    background-position:0px 300px;
     background-position: 0px\9 300px\9;
     +background-position: 0px 300px;
     _background-position:0px 300px;
 }
 
 .dwf-cont-box {
-    width: 80%;
+    width: 1210px;
     min-width: 1100px;
     height: 100%;
     margin: 0 auto;
@@ -528,8 +528,8 @@
 }
 
 .sj-content {
-    left: 385px;
-    top: 150px;
+    left: 435px;
+    top: 290px;
     width: 325px;
     height: 580px;
     text-align: right;
@@ -571,7 +571,7 @@
 }
 .what-img {
     position: absolute;
-    left: 350px;
+    left: 400px;
     
 }
 .slideBox11 .prev, .slideBox11 .next {
@@ -783,17 +783,17 @@
 }
 
 .aboutus-box{
-	min-height: 700px;
+	min-height: 600px;
 	margin-top:50px ;
     width: 100%;
-     
+    min-width: 1200px;
     background-image: none;
 }
 
+
 .abount-sub-content{
-	background: #45413f;
 	width: 100%;
-	min-height: 700px;
+	min-height: 600px;
 	
 }
 .about-img-presentation {
@@ -802,7 +802,7 @@
     width: 50%;
     +width:49%;        /*ie7*/
     _width:49%;
-    min-height:300px ;
+    min-height:600px ;
     text-align: center;
     vertical-align: middle;
     margin: 0px auto;
@@ -812,11 +812,12 @@
 	float: left;
     width: 50%;
     height: auto;
-    /*min-height:493px ;
+    background: #45413f;	
+    min-height:493px ;
     min-height:489px\9 ;
     +min-height:485px ;
     _min-height:485px ;
-    text-align: center;*/
+    text-align: center;
 
 }
 
@@ -825,7 +826,6 @@
     letter-spacing: 2px;
     margin-bottom: 50px;
     margin-top: 100px;
-    padding: 0px 18%;
     text-align: center;
     font-size: 20px;
 }
@@ -833,7 +833,7 @@
 	padding-bottom: 34px;
 }
 .about-desc-presentation .sub-content p {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 30px;
     padding: 0px 13%;
     text-align: center;
@@ -857,7 +857,7 @@
 }
 
 .footer-box{
-	width: 85%;
+     width: 1200px;
 	margin: 0px auto;
 }
 
@@ -903,8 +903,29 @@
     min-width: 50px;
     text-align: left;
     margin-left: 30px;
-    padding-left: 20px;
-    border-left: 2px solid #f2f2f2;
+  
+   
+}
+
+.about-us-text{
+	float: left;
+}
+.wx-img{
+	float: left;
+}
+.wb-img{
+	float: left;
+}
+
+
+.introduct-box{
+	margin-left: 20px;
+}
+
+
+.footer-other .line{
+	float: left;
+	padding-left: 20px;
 }
 
 .footer  dl dt {
@@ -948,8 +969,8 @@
  
 .company .sub-title {
     color: #ffffff;
-    letter-spacing: 2px;
-    
+    /*letter-spacing: 2px;
+    */
     text-align: center;
     height: 100px;
     line-height: 100px;
@@ -1019,6 +1040,17 @@
 {
    .slide-content {
      bottom: -200px ! important;
+   }
+
+}
+
+@media only screen and (min-device-height: 900px)
+{
+   .business-box{
+     min-height: 900px;
+   }
+   .about-desc-presentation{
+   	min-height: 700px;
    }
 }
 
