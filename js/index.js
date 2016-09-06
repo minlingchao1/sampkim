@@ -63,6 +63,7 @@
         4e3)
     }),
 
+
      $(".serBox").hover(function () {
 		   $(this).children().stop(false,true);
 		   $(this).children(".serBoxOn").fadeIn("slow");

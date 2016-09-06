@@ -443,6 +443,7 @@
 
 .serBox .main-title{
 	margin-top: 35%;
+<<<<<<< HEAD
 }
 
 .serBox .sub-title{
@@ -450,6 +451,15 @@
 	padding-top: 20px;	
 }
 
+=======
+}
+
+.serBox .sub-title{
+	text-align: center;
+	padding-top: 20px;	
+}
+
+>>>>>>> 00f15ff4aa5b9396da1c82f5e6f55d7d4f61f5cd
 .serBoxOn .sub-img{
 	width: 60%;
 	text-align: center;
@@ -790,6 +800,7 @@
 
 .abount-sub-content{
 	width: 100%;
+<<<<<<< HEAD
 	position: relative;
 }
 .about-img-presentation {
@@ -803,10 +814,26 @@
 	text-align: center;
 	/* vertical-align: middle; */
 	margin: 0px auto;
+=======
+	min-height: 600px;
+	
+}
+.about-img-presentation {
+	float: right;
+    padding-left: 0px;
+    width: 50%;
+    +width:49%;        /*ie7*/
+    _width:49%;
+    min-height:600px ;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px auto;
+>>>>>>> 00f15ff4aa5b9396da1c82f5e6f55d7d4f61f5cd
 }
 
 .about-desc-presentation {
 	float: left;
+<<<<<<< HEAD
 	width: 50%;
 	background: #45413f;
 	text-align: center;
@@ -815,12 +842,27 @@
 	left: 0px;
 	right: 0px;
 	bottom: 4px;
+=======
+    width: 50%;
+    height: auto;
+    background: #45413f;	
+    min-height:493px ;
+    min-height:489px\9 ;
+    +min-height:485px ;
+    _min-height:485px ;
+    text-align: center;
+
+>>>>>>> 00f15ff4aa5b9396da1c82f5e6f55d7d4f61f5cd
 }
 
 .about-desc-presentation .sub-title {
     color: #ffffff;
     letter-spacing: 2px;
     margin-bottom: 50px;
+<<<<<<< HEAD
+=======
+    margin-top: 100px;
+>>>>>>> 00f15ff4aa5b9396da1c82f5e6f55d7d4f61f5cd
     text-align: center;
     font-size: 20px;
 }
@@ -963,7 +1005,11 @@
  
 .company .sub-title {
     color: #ffffff;
+<<<<<<< HEAD
     /*letter-spacing: 2px;
+=======
+    /*letter-spacing: 2px;
+>>>>>>> 00f15ff4aa5b9396da1c82f5e6f55d7d4f61f5cd
     */
     text-align: center;
     height: 100px;
@@ -1043,6 +1089,12 @@
    .business-box{
      min-height: 900px;
    }
+<<<<<<< HEAD
+=======
+   .about-desc-presentation{
+   	min-height: 700px;
+   }
+>>>>>>> 00f15ff4aa5b9396da1c82f5e6f55d7d4f61f5cd
    .footer{
    	margin-top:200px;
    }
