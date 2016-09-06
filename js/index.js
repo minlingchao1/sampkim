@@ -2,8 +2,11 @@
 (function($){
   
   
+  
+  
   //初始化
   $(document).ready(function(){
+ 
   	$('#nav').onePageNav({
 		scrollThreshold: 0.3
 	});
@@ -17,11 +20,120 @@
 			$('.header').show(1000);
 		}
 	});
-  
+	
+	/**
+	 * 产品展示 
+	 */
+	var n=1;
+	$(".block3 ul li").click(function() {
+        if (1 == window.mdslide || $(this).hasClass("current")) return ! 1;
+        var e = $(this).index();
+        n = e,
+        window.mdslide = !0,
+        $(".block3 ul li.current").removeClass("current");
+        var t = $(this);
+        return t.addClass("current"),
+        $(".block3 ul li").find("p").hide(),
+        setTimeout(function() {
+            t.find("p").show()
+        },
+        400),
+        setTimeout(function() {
+            window.mdslide = !1
+        },
+        900),
+        !1
+    });
+    var t = $(".block3 ul li").length,
+    i = setInterval(function() {
+        $(".block3 ul li").eq(n).click(),
+        n += 1,
+        n == t && (n = 0)
+    },
+    4e3);
+    $(".block3 ul").hover(function() {
+        clearInterval(i)
+    },
+    function() {
+        i = setInterval(function() {
+            $(".block3 ul li").eq(n).click(),
+            n += 1,
+            n == t && (n = 0)
+        },
+        4e3)
+    }),
+
+     $(".serBox").hover(function () {
+		   $(this).children().stop(false,true);
+		   $(this).children(".serBoxOn").fadeIn("slow");
+	     $(this).children(".pic1").animate({right: -110},400);
+	     $(this).children(".pic2").animate({left: 41},400);
+	     $(this).children(".txt1").animate({left: -240},400);
+	     $(this).children(".txt2").animate({right: 0},400);	
+     },function () {
+		   $(this).children().stop(false,true);
+		   $(this).children(".serBoxOn").fadeOut("slow");
+		   $(this).children(".pic1").animate({right:41},400);
+	     $(this).children(".pic2").animate({left: -110},400);
+	     $(this).children(".txt1").animate({left: 0},400);
+	     $(this).children(".txt2").animate({right: -240},400);	
+     });
+
+      var number = 0;
+      $('.dtqw-min-box .content ul').width(890*$('.dtqw-min-box .content li').length+'px');
+      
+      
+			$(".dtqw-min-box .dtqw-header-box .dtqw-cont-box1").mouseover(function(){
+				$(this).addClass('on').siblings().removeClass('on');
+				var img=$(this).find("#service-img");
+				img.attr("src",img.attr("src").replace("_2","_1")); 
+				var index = $(this).index();
+				number = index;
+				var distance = -890*index;
+				$('.dtqw-min-box .content ul').stop().animate({
+					left:distance
+				});
+			});
+			
+			$(".dtqw-min-box .dtqw-header-box .dtqw-cont-box1").mouseout(function(){
+				var img=$(this).find("#service-img");
+				img.attr("src",img.attr("src").replace("_1","_2")); 
+			});
+
+      /**
+       * 
+       */
+      $("#sidebar .sidebar-btn").click(function() {
+            var e = $("#sidebar");
+            return e.width() > 50 ? ($(this).find("em").html("\u5c55\u5f00"), e.width(0)) : ($(this).find("em").html("\u6536\u8d77"), e.width(150)),
+            !1
+      });
+      
+      $('#wb').poshytip({
+      	content:"<img src=\"img/footer/qrcode_wb.png\"/>",
+      	className: 'tip-yellow',
+      	showOn:"hover",
+      	alignTo: 'target',
+        alignX: 'center',
+        alignY: 'bottom'
+        
+      });
+      $('#wx').poshytip({
+      	content:"<img src=\"img/footer/qrcode_wx.png\"/>",
+      	className: 'tip-yellow',
+      	showOn:"hover",
+      	alignTo: 'target',
+        alignX: 'center',
+        alignY: 'bottom'
+      });
+      
+
  })
   
   //加载轮播图相关
   $(window).load(function(){
+	
+	
 	
 	//轮播图高度
 	$('#home-slider').height($(window).height());
@@ -30,11 +142,11 @@
 			navigation: false,
             goToFirst: true,
             goToFirstSpeed: 2000,
-			slideSpeed: 700,
-			pagination: true,
-			transitionStyle: "fade",
-			singleItem: true,
-			afterInit: function() {
+					slideSpeed: 700,
+					pagination: true,
+					transitionStyle: "fade",
+					singleItem: true,
+					afterInit: function() {
                 $('#home-slider').height($(window).height());
                 if (!$('#home-slider').hasClass('fixed-height')) {
                     $('#home-slider #owl-main .item').height($(window).height());
@@ -89,26 +201,19 @@
     		transitionStyle: "fadeUp",
     		singleItem: true
     	});
-		//Set home slider height on resize
-	  $(window).resize(function () { 
-	        $('#home-slider').height($(window).height());
-	        if ($(window).width() >1024) { $('.slider-parallax').css('padding-top', $(window).height() + 'px'); }
-	  });
+    	
+    $("#owl-about").owlCarousel({
+        autoPlay: 5000,
+        navigation: false,
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        singleItem: true,
+        paginationNumbers:false,
+        pagination:false
+    });
+
 	  
-	  $('#outer').unleash({
-			          duration: 700,
-				        childClassName: '.box',
-				        captionClassName: '.caption_1',
-                SliderWidth: '940px',
-				        OpenFirstOnload: true,
-                SliderHeight: '300px',
-                width: 0.63,
-                Event: "hover",
-                easing:  "easeOutQuad",
-				        captionEasing:  "easeInOutBack",
-                CollapseOnMouseLeave: true,
-                CaptionAnimation: "pop-up"
-			});
+	  
 })
 
 //动画相关
@@ -123,8 +228,6 @@ jQuery(document).ready(function($) {
     });
     function Move(seccio){
         jQuery(seccio).each(function(){
-            //var posY = jQuery(window).scrollTop()+jQuery(window).height()-jQuery(this).attr('yPos')/10+jQuery(this).height()+'px';
-            //jQuery(this).css('background-position', '0 ' + posY);
             $(this).css('background-position', '0 '+(($(window).scrollTop()+$(window).height()-$(this).attr('yPos'))/3+$(this).height())+'px');
 
 
