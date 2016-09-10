@@ -83,15 +83,17 @@
       $('.dtqw-min-box .content ul').width(890*$('.dtqw-min-box .content li').length+'px');
       
       
+      
 			$(".dtqw-min-box .dtqw-header-box .dtqw-cont-box1").mouseover(function(){
 				$(this).addClass('on').siblings().removeClass('on');
 				var img=$(this).find("#service-img");
+				
 				img.attr("src",img.attr("src").replace("_2","_1")); 
 				var index = $(this).index();
 				number = index;
 				var distance = -890*index;
-				$('.dtqw-min-box .content ul').stop().animate({
-					left:distance
+				$('.content-box ul').stop().animate({
+					  marginLeft:distance
 				});
 			});
 			
