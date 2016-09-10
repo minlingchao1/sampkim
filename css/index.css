@@ -901,7 +901,7 @@
 }
 
 .footer-box{
-     width: 1200px;
+     width: 1100px;
 	margin: 0px auto;
 }
 
@@ -915,9 +915,13 @@
 	font-size: 11px;
 	height: 45px;
 	line-height: 45px;
-	margin-left: 20px;
-	width: 100%;
+	padding-left: 40px;
 }
+
+.footer-logo-contact table{
+	padding-left: 40px;
+}
+
 .footer-logo-contact p{
 	float: left;
 	height: 45px;
@@ -925,11 +929,14 @@
     text-align: center;
     
 }
-.footer-logo-contact img{
+.wb-img img{
 	padding-left: 15px;
 	vertical-align: middle;
 }
-
+.wx-img img{
+	padding-left: 15px;
+	vertical-align: middle;
+}
 .footer-other{
 	float: right;
 	width: 80%;
@@ -939,7 +946,11 @@
 
 .footer-other-introduct{
 	width: 100%;
-	float: right;
+	
+}
+
+.shop-img{
+	float:left;
 }
 
 .footer  dl {
@@ -963,7 +974,7 @@
 
 
 .introduct-box{
-	margin-left: 20px;
+	
 }
 
 
@@ -1004,7 +1015,7 @@
 }
 .company{
    width: 100%;
-   margin-top: 150px;
+
    min-width: 1200px;
    background: #1f1f1f;
    vertical-align: middle;
