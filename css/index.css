@@ -85,8 +85,13 @@
     
 }
 
-#nav  .current a{
-	border-bottom: 2px solid #ffffff;
+/*.menu-item:hover{
+	background: #000000;
+}*/
+
+
+#nav .current{
+	background: #000000;
 }
 
 #header-title .menu-item a {
@@ -176,6 +181,7 @@
     min-width: 1200px;
     background-color: #1f1f1f;
     z-index: 9999;
+    height: 64px;
 }
 #nav-mini-img{
 	float: left;
@@ -199,22 +205,21 @@
 }
 
 #nav {
-    padding-top: 10px;
     /*text-align: center;*/
     list-style-type: none;
     font: 14px Tahoma,Helvetica,Arial,"宋体";
     font-size: 0;
     float: right;
+    height: 64px;
     
 }
 
 
 #nav li {
     display: inline-block;
-    margin: 0 5px;
     float: left;
-    padding-left: 20px;
-    
+    width:80px;
+    height: 64px;
     list-style: none;
     position: relative;
     text-align: center;
@@ -225,13 +230,17 @@
 
 #nav a {
     display: inline-block;
-    padding-top:10px;
-    padding-bottom: 10px;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
     zoom: 1;
     font-size: 14px;
+    height: 64px;
+    line-height: 64px;
+}
+
+#nav li:hover{
+	background: #000000;
 }
 
 .product-box{
@@ -502,18 +511,15 @@
 
 .what-max-box {
     height: 900px;
-    /* background-color: #2b282b; */
-    background-image: url("../img/shop/bg.jpg");
-   background-size: 100%;
-    
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/shop/bg.jpg',  sizingMethod='scale');
-    -moz-background-size:100%;
-    background-repeat: no-repeat;
-    background-repeat:repeat-y\9;
-    background-position:0px 300px;
-    background-position: 0px\9 300px\9;
-    +background-position: 0px 100px;
-    _background-position:0px 300px;
+}
+
+.what-max-box-bg{
+	z-index: -1;
+	position:absolute;
+	left: 0;
+	padding-top: 350px;
+	height: 600px;
+	width: 100%;
 }
 
 .dwf-cont-box {
@@ -1049,12 +1055,11 @@
 }
 #sidebar .sidebar-btn {
     position: absolute;
-    left: -24px;
-    width: 24px;
-    top: 132px;
+    left: -45px;
+    width: 50px;
+    top: 108px;
     height: 58px;
     padding-top: 3px;
-    background: #ee6700;
     color: #fff;
     text-align: center;
 }
