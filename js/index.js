@@ -21,6 +21,19 @@
 		}
 	});
 	
+	$("#video-watch").click(function(){
+		 layer.open({
+        type: 2,
+        title: false,
+        area: ['900px', '500px'],
+        shade: 0.8,
+        closeBtn: 0,
+        shadeClose: true,
+        content: 'http://static.video.qq.com/TPout.swf?vid=o0327alcn3g&auto=0'
+      });
+
+	})
+  
 	/**
 	 * 产品展示 
 	 */
