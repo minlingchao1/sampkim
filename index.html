@@ -11,10 +11,10 @@
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
 		<link rel="stylesheet" type="text/css" href="css/owl.theme.css"/>
 		<link rel="stylesheet" type="text/css" href="css/tip-yellow.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reveal.css"/>
 		<link rel="stylesheet" type="text/css" href="css/owl.transition.css"/>
 		
 		<script src="js/jquery.js"></script>
-
 		<script src="js/respond.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/owl.carousel.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.pseudo.js" type="text/javascript" charset="utf-8"></script>
@@ -22,6 +22,7 @@
     <script src="js/jquery.slide.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/slider-index.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/jquery.poshytip.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/layer.js" type="text/javascript" charset="utf-8"></script> 
     <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body style="overflow-x: hidden;">
@@ -32,12 +33,9 @@
       	描述：悬浮框
       -->
       <div id="sidebar">
-			    <a href="javascript:void(0);" class="sidebar-btn"><em>收起</em></a>
+			    <a href="javascript:void(0);" class="sidebar-btn"><img src="img/popup_btn.png" class="img-responsive"/></a>
 			    <div class="sidebar-box">
-			        <div class="sidebar-code">
-			        	
-			        	<img src="img/qrcode_for_gh.png" class="img-responsive"/>
-			        </div>
+			        <img src="img/popup.png" class="img-responsive"/>
 			        
 			    </div>
 			    <div class="hide" id="sidebar_weibocode"></div>
@@ -59,8 +57,9 @@
 		            <li class="menu-item"><a href="#shop-box">微商城</a></li>
 		            <li class="menu-item"><a href="#video-box">自媒体</a></li>
 		            <li class="menu-item"><a href="#service-box">服务特色</a></li>
+		            <li class="menu-item" ><a href="#about-box">关于我们</a></li>
 		            <li class="menu-item"><a href="#business-box">商业合作</a></li>
-		            <li class="menu-item" style="padding-right: 20px;"><a href="#about-box">联系我们</a></li>
+		            
 		          </ul> 
  	     </div>
      	</div>
@@ -76,8 +75,9 @@
 				           <li class="menu-item"><a href="#shop-box">微商城</a></li>
 				           <li class="menu-item"><a href="#video-box">自媒体</a></li>
 				           <li class="menu-item"><a href="#service-box">服务特色</a></li>
+				           <li class="menu-item"><a href="#about-box">关于我们</a></li>
 				           <li class="menu-item"><a href="#business-box">商业合作</a></li>
-				           <li class="menu-item"><a href="#about-box">联系我们</a></li>
+				           
 			          </ul> 
      	    </div>
      	 </div>
@@ -85,13 +85,13 @@
      	 <div id="home-slider">
      	 	 <div id="owl-main" class="owl-carousel owl-theme">
                 <div class="item">
-			    				<img src="img/slider/slider01.jpg" class="img-responsive" alt="">
+			    				<img src="img/slider/slider01.jpg"   alt="">
 			    			</div>
 			    			<div class="item" >
-			    				<img src="img/slider/slider02.jpg" class="img-responsive" alt="">
+			    				<img src="img/slider/slider02.jpg"   alt="">
 			    			</div>
 			    			<div class="item">
-			    				<img src="img/slider/slider03.jpg" class="img-responsive" >
+			    				<img src="img/slider/slider03.jpg"   >
 			    			</div>
           </div>
      	 </div>
@@ -151,37 +151,8 @@
 				</div>
      	   <div id="discount" class="discount">
      	   	  <div class="servicesBox">
-							<div class="serBox">
-								<div class="serBoxOn img-responsive">
-									<p class="main-title">立即购买</p>
-									<p class="sub-title">扫描二维码<br>进入商城</p>
-									<div class="sub-img-box">
-											<div class="sub-img">
-										    <img src="img/product/qrcode_buy.jpg" class="img-responsive"/>
-									   </div>
-									</div>		
-								</div>
-								<div class="pic1"> <img src="img/product/discount_1.jpg" class="img-responsive"> </div>
 							
-							</div>
-						
-							<div class="serBox ">
-								<div class="serBoxOn img-responsive">
-									<p class="main-title">报名参加试吃团</p>
-									<p class="sub-title">扫描二维码<br>了解详情</p>
-									<div class="sub-img-box">
-											<div class="sub-img">
-										    <img src="img/product/qrcode_shichi.jpg" class="img-responsive"/>
-									   </div>
-									</div>		
-								</div>
-								<div class="pic1  "> 
-									<img src="img/product/discount_2.jpg" class="img-responsive">
-								</div>
-								
-							</div>
-						
-							<div class="serBox">
+						  <div class="serBox">
 								<div class="serBoxOn img-responsive">
 									<p class="main-title">立即购买</p>
 									<p class="sub-title">扫描二维码<br>进入商城</p>
@@ -194,6 +165,35 @@
 								<div class="pic1"> 
 									<img src="img/product/discount_3.jpg" class="img-responsive"> 
 								</div>	
+							</div>
+						  <div class="serBox">
+								<div class="serBoxOn img-responsive">
+									<p class="main-title">报名参加试吃团</p>
+									<p class="sub-title">扫描二维码<br>了解详情</p>
+									<div class="sub-img-box">
+											<div class="sub-img">
+										    <img src="img/product/qrcode_shichi.jpg" class="img-responsive"/>
+									   </div>
+									</div>		
+								</div>
+								
+								<div class="pic1"> <img src="img/product/discount_1.jpg" class="img-responsive"> </div>		
+							</div>
+							
+							<div class="serBox ">
+								<div class="serBoxOn img-responsive">
+									<p class="main-title">立即购买</p>
+									<p class="sub-title">扫描二维码<br>进入商城</p>
+									<div class="sub-img-box">
+											<div class="sub-img">
+										    <img src="img/product/qrcode_buy.jpg" class="img-responsive"/>
+									   </div>
+									</div>		
+								</div>
+								<div class="pic1  "> 
+									<img src="img/product/discount_2.jpg" class="img-responsive">
+								</div>
+								
 							</div>
 							
 							<div class="serBox">
@@ -224,7 +224,8 @@
      	 <div class="shop-show-box">
      	 	
 					<div class="what-max-box">
-						 		
+					 <img src="img/shop/bg.jpg" class="what-max-box-bg "/>
+
 						<div class="dwf-cont-box">
 							
 							<div class="subtitle-box">
@@ -232,9 +233,10 @@
 			     	   	    <p class="subtitle">微商城</p>
 			     	 </div> 
 							<div class="what-cont">
+								
 								<div class="shop-qrcode">
 			     	 		<img src="img/shop/qrcode.png" class="img-responsive shop-qrcode"/>
-			     	 	</div>
+			     	 	  </div>
 								<div class="sj-content">
 									<div id="slideBox11" class="slideBox11">
 										<div class="bd">
@@ -264,6 +266,7 @@
 						
 							</div>
 						</div>
+						
      	 </div>
      </div>
      </div>
@@ -282,13 +285,13 @@
      	   	 <div class="container">
                 <div class="jt_row jt_row-fluid row visible">
                     <div class="col-md-12 jt_col column_container">
-	                    <a class="popup-youtube" href="https://vimeo.com/80894736"><img data-sr="scale up 50%" src="img/video/play2.png" alt=""></a>
+	                    <a id="video-watch" class="popup-youtube" href="javascript:void(0)"><img data-sr="scale up 50%" src="img/video/play2.png" alt=""></a>
 	                    <p>每一种食材都无比珍贵,都有它独特的故事</p>
                     </div>
-                    
                 </div>
-            </div>
+           </div> 
      	   </div>
+     	   <!--<a class="btn btn-alt" style="margin-top: 40px;" href="">观看更多</a>-->
      </div>
      
      <!--
@@ -310,7 +313,7 @@
 							<div class="dtqw-cont-box-img">	
 							  	<img id="service-img"  src="img/service/delivery_2.png" class="img-responsive"/>
 							 </div>
-							<br><span>配送服务</span>
+							<br><span>极致物流</span>
 						</div>
 						<div class="dtqw-cont-box1">
 							 <div class="dtqw-cont-box-img">
@@ -334,95 +337,52 @@
 
 					</div>
 					<div class="content">
-						<ul>
+						<div class="content-box">
+							  <ul>
 							<li>
+								<img src="img/service/star.png"/>
 								<p>
-									从食材捕捞或出库的那一刻起，每一份新鲜食材便进入全程恒温冷链的精心呵护。
-									<br>从恒温冷库到冷藏车，从密闭保险箱到蓄冷剂，我们的仓储配送人员在追求高效、快捷的同时，更保证了食物的新鲜和营养。
-									<br>1.仓库配备专业标准的冷藏库（0-4℃）和冷冻库（—18℃），依据每一种商品独特的保鲜需求分别储藏，以保证最佳食用口感。
-									<br>2.所有冷藏/冷冻商品全部采用低温分拣，独立包装。
-									<br>3.商品内包装材料全部使用环保包装，安全健康！
-									<br>4.使用可插型密闭环保泡沫箱，运输途中全程密闭！
+									海外产地直采，全程冷链
+              <br>专业同城配送团队，鲜品直到您的家门
 								</p>
 
 							</li>
+							
 							<li>
+								<img src="img/service/star.png"/>
 								<p>
-									从食材捕捞或出库的那一刻起，每一份新鲜食材便进入全程恒温冷链的精心呵护。
-									<br>从恒温冷库到冷藏车，从密闭保险箱到蓄冷剂，我们的仓储配送人员在追求高效、快捷的同时，更保证了食物的新鲜和营养。
-									<br>1.仓库配备专业标准的冷藏库（0-4℃）和冷冻库（—18℃），依据每一种商品独特的保鲜需求分别储藏，以保证最佳食用口感。
-									<br>2.所有冷藏/冷冻商品全部采用低温分拣，独立包装。
-									<br>3.商品内包装材料全部使用环保包装，安全健康！
-									<br>4.使用可插型密闭环保泡沫箱，运输途中全程密闭！
+									海外产地直采，全程冷链2
+              <br>专业同城配送团队，鲜品直到您的家门
 								</p>
-							</li>
-							<li>
-								<p>
-									从食材捕捞或出库的那一刻起，每一份新鲜食材便进入全程恒温冷链的精心呵护。
-									<br>从恒温冷库到冷藏车，从密闭保险箱到蓄冷剂，我们的仓储配送人员在追求高效、快捷的同时，更保证了食物的新鲜和营养。
-									<br>1.仓库配备专业标准的冷藏库（0-4℃）和冷冻库（—18℃），依据每一种商品独特的保鲜需求分别储藏，以保证最佳食用口感。
-									<br>2.所有冷藏/冷冻商品全部采用低温分拣，独立包装。
-									<br>3.商品内包装材料全部使用环保包装，安全健康！
-									<br>4.使用可插型密闭环保泡沫箱，运输途中全程密闭！
-								</p>
+
 							</li>
 							
 							<li>
+								<img src="img/service/star.png"/>
 								<p>
-									从食材捕捞或出库的那一刻起，每一份新鲜食材便进入全程恒温冷链的精心呵护。
-									<br>从恒温冷库到冷藏车，从密闭保险箱到蓄冷剂，我们的仓储配送人员在追求高效、快捷的同时，更保证了食物的新鲜和营养。
-									<br>1.仓库配备专业标准的冷藏库（0-4℃）和冷冻库（—18℃），依据每一种商品独特的保鲜需求分别储藏，以保证最佳食用口感。
-									<br>2.所有冷藏/冷冻商品全部采用低温分拣，独立包装。
-									<br>3.商品内包装材料全部使用环保包装，安全健康！
-									<br>4.使用可插型密闭环保泡沫箱，运输途中全程密闭！
+									海外产地直采，全程冷链3
+              <br>专业同城配送团队，鲜品直到您的家门
 								</p>
+
 							</li>
+							
+							<li>
+								<img src="img/service/star.png"/>
+								<p>
+									海外产地直采，全程冷链4
+              <br>专业同城配送团队，鲜品直到您的家门
+								</p>
+
+							</li>
+							
 						</ul>
+						</div>
+						
 					</div>
 				</div>
 			</div>
      </div>
      
-     <!--
-     	作者：738509878@qq.com
-     	时间：2016-09-02
-     	描述：商务合作
-     -->
-     
-     <div id="business-box" class="business-box">
-     	  <div class="subtitle-box">
-     	   	    <img src="img/subtitle/business.png"/>
-     	   	    <p class="subtitle">商务合作</p>
-     	  </div> 
-     	  <div class="business-img-presentation">
-     	  	<div class="fix-img">
-     	  		<img src="img/business/img_bussiness.png" class="img-responsive"/>
-     	  	</div>
-     	  	
-     	  </div>
-     	  <div class="business-desc-presentation">
-     	  	<div id="" style="vertical-align: middle;">
-     	  		<div class="sub-title">
-     	  			我们的初心
-     	  		</div>
-     	  	  
-     	  	  <div class="sub-content">
-     	  	  	<p>● 深入产地，进入市场第一线，优选靠谱的好货
-								<br><br>● 在乎每一个用户的反馈。客服团队日夜陪伴， 力求第一时间解答疑问
-								<br><br>● 希望拼团购是一种生活方式，能够拉进您与您身边的人之间的距离。
-								<br><br>● 该网站并不用作拼好货商品交易，仅供用户了解拼好货手机app，更多
-								<br><br>优惠欢迎下载使用				
-								<br><br>从原产地和一级产地市场挑选优质货品，通过快递直达消费者手上。我们
-								<br><br>希望每一步都可以透明化：水果从产地到你手里，每一步可以看到。这是
-								<br><br>我们每天的工作，不断重复，不断进步。每一个顾客对我们都一样的重要。
-								<br>
-								<br><br>果园果农请联系拼好货：caigou@yiran.com（注明果品&产地）
-								<br><br>拼好货市场合作：0571-87183283
-					  	</p>
-     	  	 </div>
-     	  </div>
-     	  </div>
-     </div>
      
      <!--
      	作者：738509878@qq.com
@@ -438,7 +398,7 @@
      	  <div class="abount-sub-content">
      	  	    <div id="about-desc-presentation" class="about-desc-presentation" style="height: auto;">
 				     	  	 <div class="sub-box">
-				     	  	 	 <div class="sub-title">鲜品上佳<br><br>带你领略舌尖上的世界</div>
+				     	  	 	 <div class="sub-title"><h1>鲜品上佳</h1><br><br>带你领略舌尖上的世界</div>
 					     	  	 <div class="sub-content">
 					     	  	 	<p>
 					     	  	 		鲜品上佳是—— 杭州昭康贸易有限公司旗下品牌。为
@@ -468,6 +428,49 @@
 				     	  <br class="clear"  />
      	  </div>
      </div>
+     
+     
+     <!--
+     	作者：738509878@qq.com
+     	时间：2016-09-02
+     	描述：商务合作
+     -->
+     
+     <div id="business-box" class="business-box">
+     	  <div class="subtitle-box">
+     	   	    <img src="img/subtitle/business.png"/>
+     	   	    <p class="subtitle">商务合作</p>
+     	  </div> 
+     	  <div id="business-presentation"> 
+				    <img src="img/business/business-bg.jpg" class="img-responsive"/>
+				</div>
+				<div class="business-desc">
+					<h3>我们坚持</h3>
+					<p style="padding-top: 20px;">
+						     遍寻世界美食，满足用户的味蕾。
+					<br>引领饮食潮流，致力推广国外健康饮食潮流。
+					<br>提供倾心服务，不一定是所有人都熟悉的美食，但一定是所有人都满意的服务。
+					</p>
+					
+					<h3>我们承诺</h3>
+					<p style="padding-top: 20px;">
+						让用户足不出户，领略舌尖上的世界。
+        <br>让全球珍品和极致服务落地。
+					</p>
+					
+					<h3>我们愿景</h3>
+					<p style="padding-top: 20px;">
+						打造国内第一进口食品高端服务电商平台。
+				<br>成为我们的合作伙伴：2653937699@qq.com（注明产品&产地） 
+				<br>市场合作：0571-87183283 
+					</p>
+				</div>
+				
+				
+     </div>
+     
+     
+     
      <!--
      	作者：738509878@qq.com
      	时间：2016-09-02
@@ -478,19 +481,7 @@
      	 <div class="footer-box">
      	 	  <div class="footer-logo">
      	  	  <img src="img/footer/footer-logo.png" class="img-responsive"/>
-            <div class="footer-logo-contact">
-            	<div class="about-us-text">
-            		关注我们 	
-            	</div>
-        	         
-        	    <div class="wb-img" id="wb">
-        	    	<img src="img/footer/img_wb.png" />
-        	    </div>
-        	    <div class="wx-img" id="wx">
-        	    	<img src="img/footer/img_wx.png" />
-        	    
-        	    </div>
-            </div>
+            
             
             
      	    </div>
@@ -559,11 +550,31 @@
 	                        
 	               </dl>
               </div>
-               
-               <div class="footer-other-img">
-     	  	    	<img src="img/footer/qrcode_for_shop.png" class="img-responsive"/><br>
-     	  	    </div>
+     	  	    
+     	  	    <div class="footer-logo-contact">
+     	  	    		<table>
+										<tr>
+											<td><img src="img/footer/qrcode_for_shop.png" class="img-responsive shop-img" /></td>
+										</tr>
+										<tr>
+											<td>
+												<div class="about-us-text">
+					            		关注我们 	
+					            	</div>
+					            	<div class="wb-img" id="wb">
+					        	    	<img src="img/footer/img_wb.png" />
+					        	    </div>
+					        	    <div class="wx-img" id="wx">
+					        	    	<img src="img/footer/img_wx.png" />
+					        	    </div>
+											</td>
+										</tr>
+									</table>
+		            </div>
+     	  	    	
+
      	  	    </div>  
+     	  	    
      	    </div>
      	 </div> 
      	  
@@ -576,4 +587,5 @@
      </div>
     
   </body>
+  
 </html>

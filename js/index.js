@@ -21,6 +21,19 @@
 		}
 	});
 	
+	$("#video-watch").click(function(){
+		 layer.open({
+        type: 2,
+        title: false,
+        area: ['900px', '500px'],
+        shade: 0.8,
+        closeBtn: 0,
+        shadeClose: true,
+        content: 'http://static.video.qq.com/TPout.swf?vid=o0327alcn3g&auto=0'
+      });
+
+	})
+  
 	/**
 	 * 产品展示 
 	 */
@@ -83,15 +96,17 @@
       $('.dtqw-min-box .content ul').width(890*$('.dtqw-min-box .content li').length+'px');
       
       
+      
 			$(".dtqw-min-box .dtqw-header-box .dtqw-cont-box1").mouseover(function(){
 				$(this).addClass('on').siblings().removeClass('on');
 				var img=$(this).find("#service-img");
+				
 				img.attr("src",img.attr("src").replace("_2","_1")); 
 				var index = $(this).index();
 				number = index;
 				var distance = -890*index;
-				$('.dtqw-min-box .content ul').stop().animate({
-					left:distance
+				$('.content-box ul').stop().animate({
+					  marginLeft:distance
 				});
 			});
 			
